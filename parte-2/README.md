@@ -27,3 +27,9 @@ tns create my-app-name --template https://github.com/NativeScript/template-hello
 # Issues
 
 Issues related to `template-hello-world-ng` template should be logged in the https://github.com/NativeScript/NativeScript repository.
+
+# Notas del curso
+
+Para orientar el layout se utiliza la propiedad orientation="horizontal" por default lo toma como vertical
+
+Para agregar un evento se pone (tap)=evento, el "evento" debera estar definido en el *.component.ts, el (tap) se puede aplicar a cualquier elemento del html

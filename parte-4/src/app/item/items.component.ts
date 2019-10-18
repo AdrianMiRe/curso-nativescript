@@ -2,11 +2,13 @@ import { Component, OnInit } from "@angular/core";
 
 import { Item } from "../services/item";
 import { ItemService } from "../services/item.service";
+import * as Toast from 'nativescript-toast';
 
 @Component({
     selector: "ns-items",
     moduleId: module.id,
     templateUrl: "./items.component.html",
+    styleUrls: ["./items.component.css"]
 })
 export class ItemsComponent implements OnInit {
     
@@ -20,5 +22,9 @@ export class ItemsComponent implements OnInit {
 
     ngOnInit(): void {
         this.items = this.itemService.getItems();
+    }
+
+    public onShowMessage(){
+        Toast.makeText("Mostrando toast Message").show();
     }
 }
